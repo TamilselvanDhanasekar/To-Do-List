@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin:200px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: black;
+}
+
+header p {
+    margin: 5px;
+    color: grey;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: 2px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover{
+    background-color: darkblue ;
+}
+
+button:hover {
+    background-color: dimgray;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: lightgray;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+li div {
+    display: flex;
+    gap: 10px; 
+}
+
+
+
+li.complete {
+    background-color: lightgray;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+li button:hover {
+    color:black;
+}
+
+@media (max-width: 600px) {
+    .input-area {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
